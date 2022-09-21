@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+li,a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.logo p{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #f1f1f1;
+}
+.pageslinks ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.pageslinks ul li{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pageslinks ul li:hover{
+    background-color: #ddd;
+    color: black;
+    border-radius: 1rem;
+}
+.sociallinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sociallinks i{
+    padding: 0.3rem;
+    font-size: 1.3rem;
+}
+.toggle-collapse{
+    
+    display: none;
+}
+.mblpages{
+    display: none;
+}
+.mbllinks{
+    display: none;
+}
+.fa-square-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color:  #d92e7f;
+}
+.fa-twitter{
+    color: rgb(35, 161, 203);
+}
+.fa-youtube{
+    color: red;
+}
+@media only screen and (max-width: 700px) {
+ .sociallinks, .pageslinks ul{
+    display: none;
+ }
+ .toggle-collapse{
+    display: initial;
+    font-size: 2rem;
+ }
+
+ .showpages{
+    display: initial;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    
+  
+ }
+ .showpages ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .showpages ul li{
+    margin-right: 2.1rem;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+ }
+ .showlinks{
+    display: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* position: absolute;
+    /* width: 100%; */
+    /* height: 100vh; */
+ 
+ 
+ }
+ .showlinks i{
+    margin-left: 1.2rem;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    
+ }
+ 
+}
+
+
+/* .............................navbarEnd...................................... */
+
+
+
+.sitetitle{
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height:115vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.siteback{
+    text-align: center;
+}
+.siteback h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.siteback h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+.siteback .btn{
+   border: none;
+   border-radius: 2rem;
+   padding: 1rem 3rem;
+   font-size: 1.1rem;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.siteback .btn:hover{
+    padding: 0.9rem 3rem;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+/* ............................carousel.............................. */
+
+
+.blog{
+   background:url('../assets/Abract01.png');
+   background-repeat: no-repeat;
+   background-position: right;
+   height: 100vh;
+   width: 100%;
+   background-size: 65%;
+}
+.blog-post{
+    padding-top: 6rem;
+}
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.blog-content .blog-title{
+    padding: 2rem 0;
+}
+.blog-content img{
+    border-radius: 5px 5px 0px 0px;
+}
+.blog-content span{
+    display: block;
+}
+.blog-content .btn{
+    padding: 0.7rem;
+    background-color:aquamarine;
+    margin: .5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+/* ..............site content............ */
+.site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.post-content{
+    width: 100%;
+}
+.site-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+.site-content .post-content > .post-image .post-info{
+    background: skyblue;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left:20vw;
+    border-radius: 3rem;
+}
+.site-content  .post-content > .post-image > div {
+    overflow: hidden;
+}
+.site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+.post-image .img:hover{
+    transform: scale(1.3);
+}
+.post-image .img{
+    border-radius: 0.5rem;
+}
+.post-info span{
+     margin: 0.5rem;
+}
+.post-title a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+.post-title .btn{
+    padding: 0.5rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    border: 1px solid rgb(12, 12, 12);
+}
+.pagination{
+    justify-content: center;
+    margin: 4rem 0;
+    text-align: center;
+}
+.pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0.3rem;
+}
+.pages{
+background-color: gray;
+color: white;
+}
+.post-title p{
+    color: black;
+}
+.category-list .list-items{
+    background-color: rgb(65, 92, 181);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.category-list .list-items a,span {
+    color: rgb(255, 255, 255);
+}
+.sidebar .popular-post{
+    padding: 1rem 0;
+}
+.sidebar .popular-post h2{
+    padding-top: 2rem;
+}
+.popular-post .post-info{
+    padding:  .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background-color: white !important;
+}
+.sidebar .newsletter {
+    padding-top: 3rem;
+}
+.sidebar .newsletter .form-element{
+    padding: .5rem 2rem;
+}
+.sidebar .newsletter .input-text{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-size: 1rem;
+}
+.sidebar .newsletter .form-btn{
+    border-radius: 0;
+    border: none;
+    padding: .8rem 35%;
+    margin: 1rem 0;
+    background-color: skyblue;
+}
+
+.popular-tags .tags{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;    
+}
+.sidebar .popular-tags .tags .tag{
+    background-color: rgb(11, 222, 237);
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin-top: 1rem ;
+    margin-left: 1rem ;
+    white-space: nowrap;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   text-align: center;
+}
+
+.footer{
+    height: 100%;
+    background-color: black;
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+.footer .container h2,P{
+    color: white;
+}
+.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background-color:rgba(62, 60, 60, 0.529);
+    color: white;
+    font-size: 1rem;
+    width: 74%;
+}
+.footer .newsletter .form-element span{
+    background-color: rgb(64, 184, 235);
+    padding: .5rem .7rem;
+    cursor: pointer;
+} 
+.instagram .flex-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.instagram .flex-row img{
+    width: 80%;
+    height: 80%;
+    margin: .3rem .4rem;
+}
+.follow div i{
+    padding: 0.4rem;
+}
+.right  {
+    text-align: center;
+}
+.footer .right h4{
+    color: white;
+}
+.move-up{
+    text-align: end;
+}
+.move-up span i{
+    color: white;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+.move-up span i:hover{
+    color: rgb(112, 80, 254);
+}
+
+
+/*.................................. media query........................ */
+  @media only screen and (max-width:1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+  }
+  .site-content .sidebar .popular-post .post-info{
+    display: none !important;
+  }
+  .footer .container{
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+  @media only screen and (max-width:750px){
+    .site-content{
+        grid-template-columns: 100%;
+    }
+    .newsletter .form-elements{
+        padding-left: 2rem;
+    }
+    .newsletter .form-elements button{
+     
+    }
+    .mbltitles{
+        padding-top: 0;
+        padding-left: 2rem;
+    }
+    .popular-tags{
+        padding-bottom: 2rem;
+    }
+    .footer .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+  @media only screen and (max-width:520px){
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+    .footer .container > div{
+        padding: 1rem .9rem;
+    }
+    .footer .right{
+        padding: 0 1.4rem;
+    }
+    .move-up span i{
+       margin-bottom: 1rem;
+    }
+  }
+/*.................................. media query End........................ */
